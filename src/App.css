@@ -1,0 +1,151 @@
+:root {
+  --white: white;
+  --light-gray: rgb(102, 102, 102);
+  --dark-gray: #4d4d4d;
+  --black: black;
+  --red: darkred;
+  --blue: rgb(0, 68, 102);
+}
+
+body {
+  background-color: #c2c2d6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+  grid-template-columns: 80px 80px 80px 80px;
+  gap: 1px;
+  background-color: var(--black);
+  padding: 5px;
+  border: 2px solid gray;
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+button {
+  color: white;
+  height: 65px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#display {
+  grid-area: display;
+}
+
+#answer {
+  height: 24px;
+  font-size: 24px;
+  color: darkgoldenrod;
+}
+
+#expression {
+  font-size: 24px;
+  height: 24px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#add {
+  grid-area: add;
+}
+
+#six {
+  grid-area: six;
+}
+
+#five {
+  grid-area: five;
+}
+
+#four {
+  grid-area: four;
+}
+
+#three {
+  grid-area: three;
+}
+
+#two {
+  grid-area: two;
+}
+
+#one {
+  grid-area: one;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#decimal {
+  grid-area: decimal;
+}
